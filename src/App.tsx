@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from './contexts/ThemeContext';
+import { AppProvider } from './contexts/AppContext';
+import { GlobalStyles } from './styles/GlobalStyles';
+import { Navigation } from './components/layout/Navigation';
+import { Footer } from './components/layout/Footer';
+import { Hero } from './components/sections/Hero';
+import { Experience } from './components/sections/Experience';
+import { Projects } from './components/sections/Projects';
+import { Skills } from './components/sections/Skills';
+import { Blog } from './components/sections/Blog';
+import { Contact } from './components/sections/Contact';
+import { LoadingScreen, MatrixBackground } from './components/common';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <AppProvider>
+        <GlobalStyles />
+        <MatrixBackground />
+        <LoadingScreen />
+        <Navigation />
+        <main>
+          <Hero />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Blog />
+          <Contact />
+        </main>
+        <Footer />
+      </AppProvider>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
