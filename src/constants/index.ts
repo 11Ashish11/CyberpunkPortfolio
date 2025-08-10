@@ -52,9 +52,9 @@ export const PERSONAL_INFO = {
 // Contact Information
 export const CONTACT_INFO: ContactInfo = {
   email: 'ashish@example.com',
-  github: 'https://github.com/ashish',
+  github: 'https://github.com/11Ashish11',
   linkedin: 'https://linkedin.com/in/ashishbhoya',
-  twitter: 'https://twitter.com/ashish',
+  twitter: 'https://x.com/56Bhoya',
 };
 
 // Mock Experience Data
@@ -141,12 +141,13 @@ export const PROJECTS_DATA: Project[] = [
 export const SKILLS_DATA: Skill[] = [
   // Frontend
   { id: 'react', name: 'React', level: 90, category: 'frontend', icon: 'fab fa-react' },
-  { id: 'vue', name: 'Vue.js', level: 85, category: 'frontend', icon: 'fab fa-vuejs' },
   { id: 'javascript', name: 'JavaScript', level: 95, category: 'frontend', icon: 'fab fa-js-square' },
   { id: 'typescript', name: 'TypeScript', level: 88, category: 'frontend', icon: 'fas fa-code' },
   { id: 'css', name: 'CSS3', level: 90, category: 'frontend', icon: 'fab fa-css3-alt' },
   
   // Backend
+  { id: 'java', name: 'Java', level: 85, category: 'backend', icon: 'fab fa-java' },
+  { id: 'spring', name: 'Spring Boot', level: 80, category: 'backend', icon: 'fas fa-cogs' },
   { id: 'nodejs', name: 'Node.js', level: 88, category: 'backend', icon: 'fab fa-node-js' },
   { id: 'python', name: 'Python', level: 85, category: 'backend', icon: 'fab fa-python' },
   { id: 'mongodb', name: 'MongoDB', level: 80, category: 'backend', icon: 'fas fa-database' },
@@ -154,6 +155,7 @@ export const SKILLS_DATA: Skill[] = [
   
   // DevOps
   { id: 'aws', name: 'AWS', level: 78, category: 'devops', icon: 'fab fa-aws' },
+  { id: 'azure', name: 'Azure', level: 75, category: 'devops', icon: 'fab fa-microsoft' },
   { id: 'docker', name: 'Docker', level: 85, category: 'devops', icon: 'fab fa-docker' },
   { id: 'git', name: 'Git', level: 92, category: 'devops', icon: 'fab fa-git-alt' },
   { id: 'linux', name: 'Linux', level: 80, category: 'devops', icon: 'fab fa-linux' },
