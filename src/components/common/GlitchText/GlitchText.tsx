@@ -5,7 +5,7 @@ import { glitchAnimation1, glitchAnimation2 } from '../../../styles/GlobalStyles
 interface GlitchTextProps {
   children: React.ReactNode;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
   dataText?: string;
 }
 
